@@ -24,7 +24,7 @@ After running go to this address:
 
 For a live demo go to:
 
-	http://uditalias.github.com/chat-nodejs
+	http://uditalias.github.com/chat-nodejs/public
 	
 
 	

@@ -67,8 +67,8 @@ html {
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
 	background-repeat: repeat;
 }
-body{text-align:center;font-family: 'Lato', sans-serif;background:url(images/darkbg.png) repeat top left;}
-header{padding:50px;padding-bottom:100px;line-height:40px;background:url(images/bg.png) repeat top left;position:relative;}
+body{text-align:center;font-family: 'Lato', sans-serif;background:url(../images/darkbg.png) repeat top left;}
+header{padding:50px;padding-bottom:100px;line-height:40px;background:url(../images/bg.png) repeat top left;position:relative;}
 h1{text-rendering:optimizelegibility;color:#333;font-weight:bolder;text-shadow:0 1px 1px #CCC;position:relative;display:inline-block;}
 h1 sup{font-size:18px;position:absolute;right:-50px;top:-7px;cursor:pointer;}
 h3{font-weight:thin;text-rendering:optimizelegibility;color:#ccc;}
@@ -95,11 +95,11 @@ iframe{text-align:center !important;}
 	background-color: #47bc60;
 	border-radius:30px;
 	cursor:pointer;
-	background-image: url(/images/noise.png),-webkit-linear-gradient(top, #47bc60, #39a64e);
-	background-image: url(/images/noise.png),-moz-linear-gradient(top, #47bc60, #39a64e);
-	background-image: url(/images/noise.png),-o-linear-gradient(top, #47bc60, #39a64e);
-	background-image: url(/images/noise.png),-ms-linear-gradient(top, #47bc60, #39a64e);
-	background-image: url(/images/noise.png),linear-gradient(top, #47bc60, #39a64e);
+	background-image: url(../images/noise.png),-webkit-linear-gradient(top, #47bc60, #39a64e);
+	background-image: url(../images/noise.png),-moz-linear-gradient(top, #47bc60, #39a64e);
+	background-image: url(../images/noise.png),-o-linear-gradient(top, #47bc60, #39a64e);
+	background-image: url(../images/noise.png),-ms-linear-gradient(top, #47bc60, #39a64e);
+	background-image: url(../images/noise.png),linear-gradient(top, #47bc60, #39a64e);
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#47bc60', EndColorStr='#39a64e');
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1), inset 1px 0 0 rgba(255,255,255,0.05), inset -1px 0 0 rgba(255,255,255,0.05), inset 0 1px 0 rgba(0,0,0,0.08);
 	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1), inset 1px 0 0 rgba(255,255,255,0.05), inset -1px 0 0 rgba(255,255,255,0.05), inset 0 1px 0 rgba(0,0,0,0.08);
@@ -129,11 +129,11 @@ iframe{text-align:center !important;}
 	background-color: #47bc60;
 	border-radius:5px;
 	cursor:pointer;
-	background-image: url(/images/noise.png),-webkit-linear-gradient(top, #47bc60, #39a64e);
-	background-image: url(/images/noise.png),-moz-linear-gradient(top, #47bc60, #39a64e);
-	background-image: url(/images/noise.png),-o-linear-gradient(top, #47bc60, #39a64e);
-	background-image: url(/images/noise.png),-ms-linear-gradient(top, #47bc60, #39a64e);
-	background-image: url(/images/noise.png),linear-gradient(top, #47bc60, #39a64e);
+	background-image: url(../images/noise.png),-webkit-linear-gradient(top, #47bc60, #39a64e);
+	background-image: url(../images/noise.png),-moz-linear-gradient(top, #47bc60, #39a64e);
+	background-image: url(../images/noise.png),-o-linear-gradient(top, #47bc60, #39a64e);
+	background-image: url(../images/noise.png),-ms-linear-gradient(top, #47bc60, #39a64e);
+	background-image: url(../images/noise.png),linear-gradient(top, #47bc60, #39a64e);
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#47bc60', EndColorStr='#39a64e');
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1), inset 1px 0 0 rgba(255,255,255,0.05), inset -1px 0 0 rgba(255,255,255,0.05), inset 0 1px 0 rgba(0,0,0,0.08);
 	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1), inset 1px 0 0 rgba(255,255,255,0.05), inset -1px 0 0 rgba(255,255,255,0.05), inset 0 1px 0 rgba(0,0,0,0.08);

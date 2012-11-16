@@ -38,7 +38,7 @@ This application uses the following:
 
 ### Future features
 
-Chat history with MongoDB and LocalStorage
-Private chat with users
+- Chat history with MongoDB and LocalStorage
+- Private chat with users
 	
 ###Enjoy!

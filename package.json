@@ -11,6 +11,6 @@
 	],
 	"dependencies": {
 		"socket.io": "*",
-		"express": "*"
+		"express": "3.x"
 	}
 }

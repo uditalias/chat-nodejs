@@ -236,5 +236,13 @@ function generateId(){
 	return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
 }
 
+/**
+ * Send whisper to a user in the room using /w {username} {message}
+ * @param socketId
+ * @param data
+ */
+function whisper(socketId, data){
+}
+
 // show a message in console
 console.log('Chat server is running and listening to port %d...', port);

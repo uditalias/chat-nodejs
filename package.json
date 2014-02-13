@@ -1,0 +1,16 @@
+{
+	"name": "ChatNodeJs",
+	"version": "0.0.1",
+	"author": "Udi Talias",
+	"contributors": [
+		{
+			"name": "Hugo Dias",
+			"email": "hugooodias@gmail.com",
+			"url": "http://github.com/hugodias"
+		}
+	],
+	"dependencies": {
+		"socket.io": "*",
+		"express": "3.x"
+	}
+}

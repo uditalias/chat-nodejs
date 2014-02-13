@@ -120,15 +120,6 @@ function disconnect(socket){
 	delete chatClients[socket.id];
 }
 
-// receive chat message from a client and
-// send it to the relevant room
-function chatmessage(socket, data){
-	// by using 'socket.broadcast' we can send/emit
-	// a message/event to all other clients except
-	// the sender himself
-	socket.broadcast.to(data.room).emit('chatmessage', { client: chatClients[socket.id], message: data.message, room: data.room });
-}
-
 // subscribe a client to a room
 function subscribe(socket, data){
 	// get a list of all active rooms
@@ -234,6 +225,63 @@ function generateId(){
 		return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
 	};
 	return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
+}
+
+
+
+// receive chat message from a client and
+// send it to the relevant room
+function chatmessage(socket, data){
+	// by using 'socket.broadcast' we can send/emit
+	// a message/event to all other clients except
+	// the sender himself
+
+	// Handle the message extracting whisper, etc..
+	data = handle_message(data);
+
+	socket.broadcast.to(data.room).emit('chatmessage', { client: chatClients[socket.id], message: data.message, room: data.room, to: data.to });
+}
+
+
+/**
+ * Handle message
+ * @param data
+ * @returns {*}
+ */
+function handle_message(data){
+	var splitted_message = data.message.split(" ");
+	var command = splitted_message[0];
+
+	// Whisper
+	// Format: /w {to} {message}
+	if( command == '/w' && splitted_message.length > 2 ) {
+		return whisper(data);
+	}
+
+	return data;
+}
+
+
+/**
+ * Format a whisper message
+ * @param data
+ * @returns {*}
+ */
+function whisper(data){
+	var splitted_message = data.message.split(" ");
+	var to = splitted_message[1];
+
+	// Set message to the receiver
+	data.to = to;
+
+	// Remove first 2 indexes
+	splitted_message.shift();
+	splitted_message.shift();
+
+	// Remove first 2 index from array and make a join
+	data.message = splitted_message.join(" ");
+
+	return data;
 }
 
 // show a message in console

@@ -18,7 +18,9 @@ On Windows/Mac/Linux:
 After running go to this address:
 
 	http://locahost:8080/
-	
+
+You can change listening port in server.js line 9.
+
 
 ### Live demo
 

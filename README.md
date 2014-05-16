@@ -7,9 +7,15 @@ It includes a server built in node.js and a html client.
 You can read the full tutorial at:
 http://udidu.blogspot.com/2012/11/chat-evolution-nodejs-and-socketio.html
 
+### Install dependencies: 
+
+You need expressjs and socket.io.
+
+	$ npm install 
+
+
 ### To run:
 
-Please be sure you have expressjs and socket.io modules installed before running this application.
 
 On Windows/Mac/Linux:
 
@@ -29,7 +35,6 @@ For a live demo go to:
 	http://uditalias.github.com/chat-nodejs/public
 	
 
-	
 ### Credits
 
 This application uses the following:

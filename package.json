@@ -1,0 +1,16 @@
+{
+    "name": "ChatApplication",
+    "description": "Multi-Room Chat Application",
+    "author": {
+        "name": "Udi Talias",
+        "email": "udi.talias@gmail.com",
+        "url": "http://udidu.blogspot.com"
+    }, 
+    "dependencies": {
+        "express": "3.*.*",
+        "socket.io": "0.9.*"
+    },
+    "scripts": {
+        "start": "node server.js"
+    } 
+}

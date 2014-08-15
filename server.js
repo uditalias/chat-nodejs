@@ -25,7 +25,7 @@ app.use("/images", express.static(__dirname + '/public/images'));
 // when a client makes a request to the app root
 // (http://localhost:8080/)
 app.get('/', function (req, res) {
-	res.sendfile(__dirname + '/public/index.html');
+	res.sendFile(__dirname + '/public/index.html');
 });
 
 // sets the log level of socket.io, with

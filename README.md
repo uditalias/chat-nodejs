@@ -13,11 +13,12 @@ Please be sure you have expressjs and socket.io modules installed before running
 
 On Windows/Mac/Linux:
 
+	$ npm install
 	$ node server.js
 	
 After running go to this address:
 
-	http://locahost:8080/
+	http://localhost:8080/
 	
 
 ### Live demo

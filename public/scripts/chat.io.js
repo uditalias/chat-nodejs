@@ -12,7 +12,7 @@
 		currentRoom = null,
 
 		// server information
-		serverAddress = 'http://localhost',
+		serverAddress = '',
 		serverDisplayName = 'Server',
 		serverDisplayColor = '#1c5380',
 

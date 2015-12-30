@@ -2,7 +2,7 @@
 // listening to 'port', we are creating an express
 // server and then we are binding it with socket.io
 var express 	= require('express'),
-	app			= express(),
+    app		= express(),
     server  	= require('http').createServer(app),
     io      	= require('socket.io').listen(server),
     port    	= 8080,
